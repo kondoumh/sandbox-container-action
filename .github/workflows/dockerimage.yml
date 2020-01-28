@@ -17,7 +17,7 @@ jobs:
     - name: Build image and Publish to Registry
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
-        name: docker.pkg.github.com/kondoumh/sandbox-container-action
+        name: docker.pkg.github.com/kondoumh/sandbox-container-action/sandbox-container-action
         username: kondoumh
         password: ${{ secrets.REGISTRY_TOKEN }}
         registry: docker.pkg.github.com
