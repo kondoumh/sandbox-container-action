@@ -10,6 +10,6 @@ outputs:
     description: 'The time we greeted you'
 runs:
   using: 'docker'
-  image: 'docker.pkg.github.com/kondoumh/sandbox-container-action/sandbox-container-action:latest'
+  image: 'docker://docker.pkg.github.com/kondoumh/sandbox-container-action/sandbox-container-action:latest'
   args:
     - ${{ inputs.who-to-greet }}
